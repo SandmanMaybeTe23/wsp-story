@@ -1,6 +1,16 @@
 body {
-    font-family: sans-serif;
+    font-family: "Comic Sans MS" ;
     font-size: 1.2rem;
-    background:   rebeccapurple;
+    background-color: rgb(28, 28, 28);
+    color: rgb(102, 27, 186);
+    
 }
 
+
+nav{
+    display: flex;
+    
+    li{
+        list-style: none;
+    }
+}
