@@ -5,10 +5,15 @@ import morgan from "morgan"
 
 const app = express()
 
+
 import indexRouter from "./routes/index.js"
+import storyRouter from "./routes/story.js"
+
 
 app.use(express.static('public'))
 app.use(morgan("dev"))
+
+
 
 nunjucks.configure('views', {
     autoescape: true,
@@ -17,8 +22,12 @@ nunjucks.configure('views', {
 
 
 app.use("/",indexRouter)
+app.use("/story",storyRouter)
+
 
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`)
 })
+
+
