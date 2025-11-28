@@ -1,0 +1,17 @@
+Jag vet inte exakt vad jag har tänkt under uppgiften men jag känner mig att jag vill göra med detta men jag vill inte så yep.
+
+Men hur fungera detta först har vi vår story.JS som tar allt från story.Json och gör det till funtionel text.
+Sen har vi vår story-page.njk som story.JS ger vår text från story.Json till story-page.njk och gör tittle och vår huvud text till sidan och sne loopar genom våra choices och allt är i från story.Json .
+
+Skilnaderna mellan 11ty och detta är att detta upptaderas mer mellan 11ty är mer statics.
+
+Jag har två Route filler varför har jag detta när jag kan bara ha en story jag vet inte men jag kan säga att de har mer ornig på var sakerna är.
+
+När man kommer till min sida kommer du hitta dig till index.js(no shit) men jag har en nav i sidan som är svart som han har home och story som story har vår saga och man får olika vall under texten som man får välja på som kan leda till olika andra vall till du dör.
+
+jag har bra legt in css inte mycket annat.
+
+jag vet inte(jag är ockås latt och de slut av lektionen)
+
+
+     

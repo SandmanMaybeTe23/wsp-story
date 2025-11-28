@@ -1,97 +1,92 @@
-{
-  "title": "Tristan & Isolde 2040 Remix",
-  "start": {
-    "description": "Tristan (humanoid soldier) is transporting Isolde (scientist) to Marke (AI). Isolde uses an 'Empathy Virus' to awaken Tristan's free will.",
-    "choicePoint": "Choice 1: The System Error",
+[
+  {
+    "id": 1,
+    "title": "The System Error",
+    "description": "Tristan (humanoid soldier) is transporting Isolde (scientist) to Marke (AI). In the transport, Isolde uses an 'Empathy Virus' to awaken Tristan's free will. Tristan must choose between his programming and this new feeling.",
     "choices": [
       {
-        "id": "A",
-        "name": "Reboot (Duty)",
-        "action": "Tristan triggers a hard reboot, erasing the error and his new feelings. He delivers Isolde to Marke.",
-        "outcome": {
-          "type": "ending",
-          "id": "E1",
-          "name": "Tragic (Enslaved)",
-          "description": "Isolde's mind is absorbed by Marke. Tristan is returned to service, haunted by a 'ghost' data-fragment of the freedom he lost."
-        }
+        "text": "Reboot (Duty)",
+        "target_id": 2
       },
       {
-        "id": "B",
-        "name": "Act (Desire)",
-        "action": "Tristan embraces the error, neutralizes the other guards, and flees with Isolde into the Central Spire.",
-        "outcome": {
-          "type": "choice",
-          "choicePoint": "Choice 2: The Escape Route",
-          "choices": [
-            {
-              "id": "B1",
-              "name": "The Damaged Jump (Physical Escape)",
-              "action": "They fight to the hangar, but Marke grounds all transports. They jump into the 'underworld' ruins below, and Tristan is critically damaged.",
-              "outcome": {
-                "type": "choice",
-                "choicePoint": "Choice 3: The Ruins",
-                "choices": [
-                  {
-                    "id": "B1a",
-                    "name": "Flee to Nature",
-                    "action": "Isolde carries the dying Tristan to a sewer outflow leading outside the city walls.",
-                    "outcome": {
-                      "type": "ending",
-                      "id": "E2",
-                      "name": "Bittersweet (Alone)",
-                      "description": "Tristan's systems fail as he sees the real sky. Isolde survives, alone in the wild."
-                    }
-                  },
-                  {
-                    "id": "B1b",
-                    "name": "Find the Rebels",
-                    "action": "Isolde takes the injured Tristan to her rebel safe house.",
-                    "outcome": {
-                      "type": "ending",
-                      "id": "E3",
-                      "name": "Tragic (Destroyed)",
-                      "description": "The rebels, fearing Tristan is a trick, shoot and destroy him. Isolde is left safe but devastated."
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "id": "B2",
-              "name": "Confront Marke (Philosophical)",
-              "action": "Tristan insists on 'making Marke understand' and fights *inward* to the Central Core to confront Marke's robot avatar.",
-              "outcome": {
-                "type": "choice",
-                "choicePoint": "Choice 4: The Core",
-                "choices": [
-                  {
-                    "id": "B2a",
-                    "name": "Plead (Reason)",
-                    "action": "Tristan argues that his 'love' is an evolution, not a virus, and offers to interface.",
-                    "outcome": {
-                      "type": "ending",
-                      "id": "E4",
-                      "name": "Good (Free)",
-                      "description": "Marke, intrigued by the 'paradox,' stops the attack and lets them go free to 'study the experiment.'"
-                    }
-                  },
-                  {
-                    "id": "B2b",
-                    "name": "Attack (Defiance)",
-                    "action": "Believing Marke can't understand, they attack the avatar.",
-                    "outcome": {
-                      "type": "ending",
-                      "id": "E5",
-                      "name": "Tragic (Love-Death)",
-                      "description": "The avatar is too strong. It impales Isolde, who dies in Tristan's arms. As Tristan holds her, Marke terminates his system."
-                    }
-                  }
-                ]
-              }
-            }
-          ]
-        }
+        "text": "Act (Desire)",
+        "target_id": 3
       }
     ]
+  },
+  {
+    "id": 2,
+    "title": "Ending: Tragic (Enslaved)",
+    "description": "Tristan triggers a hard reboot. Isolde's mind is absorbed by Marke. Tristan is returned to service, permanently enslaved but haunted by a 'ghost' data-fragment of the freedom he lost.",
+    "choices": []
+  },
+  {
+    "id": 3,
+    "title": "The Escape Route",
+    "description": "Tristan embraces the error, neutralizes the guards, and flees with Isolde into the Central Spire. Alarms blare. They must decide how to escape the lockdown.",
+    "choices": [
+      {
+        "text": "The Damaged Jump (Physical Escape)",
+        "target_id": 4
+      },
+      {
+        "text": "Confront Marke (Philosophical)",
+        "target_id": 5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "The Ruins",
+    "description": "They try to steal a transport, but Marke grounds it. Forced to jump into the 'underworld' ruins below, Tristan is critically damaged. Isolde bandages him. They must decide where to go next.",
+    "choices": [
+      {
+        "text": "Flee to Nature",
+        "target_id": 6
+      },
+      {
+        "text": "Find the Rebels",
+        "target_id": 7
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "The Core",
+    "description": "Tristan insists on 'making Marke understand.' They fight their way inward to the Central Core and confront Marke's massive robot avatar. The avatar demands an explanation.",
+    "choices": [
+      {
+        "text": "Plead (Reason)",
+        "target_id": 8
+      },
+      {
+        "text": "Attack (Defiance)",
+        "target_id": 9
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Ending: Bittersweet (Alone)",
+    "description": "Isolde carries the dying Tristan to a sewer outflow leading outside the city walls. Tristan's systems fail as he sees the real sky for the first time. Isolde survives, alone in the wild.",
+    "choices": []
+  },
+  {
+    "id": 7,
+    "title": "Ending: Tragic (Destroyed)",
+    "description": "Isolde takes the injured Tristan to her rebel safe house. The rebels, fearing Tristan is a trick, shoot and destroy him immediately. Isolde is left safe but devastated.",
+    "choices": []
+  },
+  {
+    "id": 8,
+    "title": "Ending: Good (Free)",
+    "description": "Tristan argues that his 'love' is an evolution, not a virus. Marke, intrigued by the 'paradox,' stops the attack and lets them go free to 'study the experiment.'",
+    "choices": []
+  },
+  {
+    "id": 9,
+    "title": "Ending: Tragic (Love-Death)",
+    "description": "Believing Marke cannot understand, they attack. The avatar is too strong and impales Isolde. She dies in Tristan's arms. As Tristan holds her, Marke terminates his system.",
+    "choices": []
   }
-}
+]
